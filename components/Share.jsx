@@ -11,16 +11,16 @@ export default function Share() {
     return (
         <div>
 <FacebookShareButton
-  url={'https://github.com/next-share'}
+  url={'https://senzazucchero.rocks'}
   quote={'next-share is a social share buttons for your next React apps.'}
-  hashtag={'#nextshare'}
+  hashtag={'#senzazucchero'}
 >
   <FacebookIcon size={32} round />
 </FacebookShareButton>
 <TwitterShareButton
-  url={'https://github.com/next-share'}
+  url={'https://senzazucchero.rocks'}
   quote={'next-share is a social share buttons for your next React apps.'}
-  hashtag={'#nextshare'}
+  hashtag={'#senzazucchero'}
 >
   <TwitterIcon size={32} round />
 </TwitterShareButton>
