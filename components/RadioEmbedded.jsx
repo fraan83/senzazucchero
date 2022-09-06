@@ -7,7 +7,7 @@ export default function RadioEmbedded() {
             <style jsx>
             {`
         iframe {
-          min-height: 100vh;
+          min-height: 20vh;
           min-width: 40vh;
           padding: 0 0.5rem;
           border: none;

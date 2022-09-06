@@ -32,7 +32,7 @@ export default function Home() {
         </a>
       </footer><style jsx>{`
         .container {
-          min-height: 20vh;
+          min-height: 10vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
