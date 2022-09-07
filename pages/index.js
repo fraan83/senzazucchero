@@ -18,8 +18,10 @@ export default function Home() {
           <RadioEmbedded></RadioEmbedded>
         </p>
         <hr></hr>
-        <p>
+        <p className="centralize">
           <Share></Share>
+          <br></br>
+          <img className="imginvisible" src="senzazuccherologo.png" alt="senzazucchero internet radio" height="200px" width="200px"></img>
         </p>
       </main><footer>
         <img src="senzazuccherologo.svg" alt="senzazucchero internet radio" height="200px" width="200px"></img>
@@ -163,6 +165,11 @@ export default function Home() {
           bottom: 0px;
       
         }
+
+        .imginvisible{
+          visibility:hidden;
+        }
+      
       `}</style><style jsx global>{`
         html,
         body {
@@ -172,6 +179,12 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
+
+        .centralize{
+          text-align: center;
+  
+          }
+  
 
         * {
           box-sizing: border-box;
