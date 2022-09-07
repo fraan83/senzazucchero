@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>senzazucchero</title>
+        <title>senzazucchero - radio </title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -32,7 +32,7 @@ export default function Home() {
           welcome to 
         </h2>
         <h1 className="name"><i className="greencolor">senza</i>zucchero</h1>
-        <h4>
+        <h4 className="subname">
           internet radio cafè
         </h4>
         <div>
@@ -122,8 +122,13 @@ export default function Home() {
 
         .name{
           line-height: 1.15;
-          font-size: 4rem;
+          font-size: 3rem;
         }
+        .subname{
+          position: relative;
+          top: -3em;
+        }
+
 
         code {
           background: #fafafa;
@@ -222,6 +227,10 @@ export default function Home() {
           
           h2 {
             font-family: Caveat;
+          }
+          
+          button {
+            margin: 0.5rem;
           }
 
         * {
