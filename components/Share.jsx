@@ -28,12 +28,11 @@ export default function Share() {
         <FacebookIcon size={32} round />
       </FacebookShareButton>
       <TwitterShareButton
-        url={'senzazucchero.rocks'}
-        quote={'senzazucchero internet radio.'}
-        hashtag={'#senzazucchero #NowPlaying'}
-      >
-        <TwitterIcon size={32} round />
-      </TwitterShareButton>
+  url={'https://senzazucchero.rocks'}
+  title={'Sto ascoltando radio #senzazucchero '}
+>
+  <TwitterIcon size={32} round />
+</TwitterShareButton>
       <PinterestShareButton
 
         url={'senzazucchero.rocks'}>
