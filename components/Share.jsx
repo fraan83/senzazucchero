@@ -12,14 +12,15 @@ export default function Share() {
         <div>
 <FacebookShareButton
   url={'https://senzazucchero.rocks'}
-  quote={'next-share is a social share buttons for your next React apps.'}
+  quote={'senzazucchero internet radio.'}
   hashtag={'#senzazucchero'}
+  
 >
   <FacebookIcon size={32} round />
 </FacebookShareButton>
 <TwitterShareButton
   url={'https://senzazucchero.rocks'}
-  quote={'next-share is a social share buttons for your next React apps.'}
+  quote={'senzazucchero internet radio.'}
   hashtag={'#senzazucchero'}
 >
   <TwitterIcon size={32} round />

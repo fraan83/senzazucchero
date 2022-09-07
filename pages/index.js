@@ -2,7 +2,7 @@ import Head from 'next/head'
 import RadioEmbedded from '../components/RadioEmbedded'
 import Share from '../components/Share'
 export default function Home() {
- 
+
   return (
     <div className="container">
       <Head>
@@ -12,24 +12,17 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <i className="greencolor">senza</i>zucchero
-      </h1>
-      <p>
-        <RadioEmbedded></RadioEmbedded>
-      </p>
-      <hr></hr>
-      <p>
-        <Share></Share>
-      </p>
-    </main><footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
+          welcome to <i className="greencolor">senza</i>zucchero
+        </h1>
+        <p>
+          <RadioEmbedded></RadioEmbedded>
+        </p>
+        <hr></hr>
+        <p>
+          <Share></Share>
+        </p>
+      </main><footer>
+        <img src="senzazuccherologo.svg" alt="senzazucchero internet radio" height="200px" width="200px"></img>
       </footer><style jsx>{`
         .container {
           min-height: 10vh;
