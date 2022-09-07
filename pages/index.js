@@ -157,6 +157,12 @@ export default function Home() {
             flex-direction: column;
           }
         }
+
+        footer img{
+          position: absolute;
+          bottom: 0px;
+      
+        }
       `}</style><style jsx global>{`
         html,
         body {
