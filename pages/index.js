@@ -8,24 +8,49 @@ export default function Home() {
       <Head>
         <title>senzazucchero</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff"></meta>
       </Head>
 
       <main>
-        <h1 className="title">
-          welcome to <i className="greencolor">senza</i>zucchero
-        </h1>
-        <p>
+        <h2 className="title">
+          welcome to 
+        </h2>
+        <h1 className="name"><i className="greencolor">senza</i>zucchero</h1>
+        <h4>
+          internet radio cafè
+        </h4>
+        <div>
+          
           <RadioEmbedded></RadioEmbedded>
-        </p>
+        </div>
         <hr></hr>
-        <p className="centralize">
+        <div className="centralize">
           <Share></Share>
           <br></br>
           <img className="imginvisible" src="senzazuccherologo.png" alt="senzazucchero internet radio" height="200px" width="200px"></img>
-        </p>
+        </div>
       </main><footer>
         <img src="senzazuccherologo.svg" alt="senzazucchero internet radio" height="200px" width="200px"></img>
       </footer><style jsx>{`
+
+
+
         .container {
           min-height: 10vh;
           padding: 0 0.5rem;
@@ -80,7 +105,7 @@ export default function Home() {
         }
 
         .title {
-          margin: 3rem;
+          margin: -2rem;
           line-height: 1.15;
           font-size: 3rem;
         }
@@ -93,6 +118,11 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+
+        .name{
+          line-height: 1.15;
+          font-size: 4rem;
         }
 
         code {
@@ -185,6 +215,14 @@ export default function Home() {
   
           }
   
+          @font-face {
+            font-family: Caveat;
+            src: url(Caveat/Caveat-VariableFont_wght.ttf);
+          }
+          
+          h2 {
+            font-family: Caveat;
+          }
 
         * {
           box-sizing: border-box;
