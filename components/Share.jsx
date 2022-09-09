@@ -37,7 +37,7 @@ export default function Share() {
           )
         })
         setshowPosts(displayData);
-        console.log(showPosts);
+        //console.log(showPosts);
 
       })
     //return;
