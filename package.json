@@ -7,8 +7,12 @@
   },
   "dependencies": {
     "next": "latest",
-    "next-share": "^0.18.1",
+    "next-share": "^0.12.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "twitter-lite": "^1.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
   }
 }

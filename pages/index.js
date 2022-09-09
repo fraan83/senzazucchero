@@ -1,8 +1,43 @@
 import Head from 'next/head'
 import RadioEmbedded from '../components/RadioEmbedded'
 import Share from '../components/Share'
+import Messages from '../components/Messages'
+import Tweets from '../components/Tweets'
+import { useState, useEffect } from "react"
 export default function Home() {
+ 
+    const radiolizeAPI = 'https://studio19.radiolize.com/api/nowplaying'
+    const [showPosts, setshowPosts] = useState();
+ 
+    let displayData;
+    function pullJson() {
+        fetch(radiolizeAPI)
+            .then(response => response.json())
+            .then(responseData => {
+              var radiosenzazucchero = responseData.filter(x => x.station.id == 58);
 
+                /*
+                var messaggi = responseData.messages.sort((a, b) => a - b);
+                var maxMessaggi = messaggi.slice(0, 10)
+                displayData = maxMessaggi.map(function (data) {
+                    return (
+                        <div key={data.id}>
+                            <p> {new Date(data.created_at).toLocaleDateString('it-IT')} <b>{data.name} : </b>
+                                "<i>{data.text}</i>"
+                            </p>
+                            <hr></hr>
+                        </div>
+                    )
+                })
+                setshowPosts(displayData);
+                console.log(radiosenzazucchero);
+               */
+            })
+        //return;
+    }
+    useEffect(() => {
+      pullJson();
+  })
   return (
     <div className="container">
       <Head>
@@ -40,6 +75,9 @@ export default function Home() {
           <RadioEmbedded></RadioEmbedded>
         </div>
         <hr></hr>
+        <div className="centralize">
+ 
+        </div>
         <div className="centralize">
           <Share></Share>
           <br></br>

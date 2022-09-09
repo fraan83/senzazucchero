@@ -1,0 +1,22 @@
+{
+    "messages" : [
+        {
+            "id": 1,
+            "name": "easeBarby",
+            "text": "momento momento momento momento momento",
+            "created_at": "2022-09-06T18:25:43.511Z"
+        },
+        {
+            "id": 2,
+            "name": "umbyxx",
+            "text": "mettete un po' di musica leggeraLOL",
+            "created_at": "2022-09-07T14:25:43.511Z"
+        },
+        {
+            "id": 3,
+            "name": "fra",
+            "text": "messaggio di prova SA SA SA",
+            "created_at": "2022-09-06T17:15:43.511Z"
+        }
+    ]
+}
