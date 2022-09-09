@@ -1,4 +1,4 @@
-import { fetchUser } from '../../services/twitter'
+import { fetchUser } from '../../services/Twitter'
 
 const isValid = (data) => {
   if(!data?.twitterHandle) {
