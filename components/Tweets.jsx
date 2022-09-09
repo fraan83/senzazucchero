@@ -1,4 +1,4 @@
-import { fetchUser } from '../services/twitter'
+import { fetchUser } from '../services/Twitter'
 
 function TwitterCard(props) {
   let profileImageURL = props.twitterInfo.profileImageURL.replace(/_normal/g, "");
