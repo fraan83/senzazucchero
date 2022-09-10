@@ -1,5 +1,5 @@
-import { fetchUser } from '../../services/Twitter'
-
+import { fetchUser, fetchPosts } from '../../services/Twitter'
+ 
 const isValid = (data) => {
   if(!data?.twitterHandle) {
     return false
@@ -29,7 +29,9 @@ export default async (req, res) => {
         'name': userResponse.name,
         'profile_image_url': userResponse.profile_image_url_https
       }
-    
+      
+      cosole.log(twitterInfo);
+      
       res.status(200).json(twitterInfo)
     }
   }  

@@ -1,43 +1,39 @@
 import { useState, useEffect } from "react"
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+
 export default function Messages() {
-    const [showPosts, setshowPosts] = useState();
-    const apiUrlMessages = 'messages.json';
-    let displayData;
-    function pullJson() {
-        fetch(apiUrlMessages)
-            .then(response => response.json())
-            .then(responseData => {
-                var messaggi = responseData.messages.sort((a, b) => a - b);
-                var maxMessaggi = messaggi.slice(0, 10)
-                displayData = maxMessaggi.map(function (data) {
-                    return (
-                        <div key={data.id}>
-                            <p> {new Date(data.created_at).toLocaleDateString('it-IT')} <b>{data.name} : </b>
-                                "<i>{data.text}</i>"
-                            </p>
-                            <hr></hr>
-                        </div>
-                    )
-                })
-                console.log(responseData);
-                setshowPosts(displayData);
-            })
-        //return;
-    }
 
     useEffect(() => {
-        pullJson();
+
     })
     return (
         <div className="centralize">
-               <div>
-                <h5>message box </h5>
-                <hr></hr>
-                </div> 
+            <div>
+                <p> <b>Twitta senza zucchero!</b> </p>
+
+            </div>
+            <TwitterHashtagButton
+                size="large"
+                tag={'senzazucchero'}
+            />
+            <div>
                 <div>
-        {showPosts}
-        </div>
+
+                    <TwitterTimelineEmbed
+                        sourceType="profile"
+                        screenName="zuccherosenza"
+                        options={{ tweetLimit: '3', height: 500, width: 400 }}
+                    />
+
+                </div>
+
+                <div>
  
+                </div>
+
+            </div>
+
+       
         </div>
     )
 }

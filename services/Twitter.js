@@ -8,3 +8,13 @@ export const fetchUser = async (screen_name) => {
 
   return client.get('users/show', { screen_name: screen_name });
 }
+
+
+export const fetchPosts = async (hashtag) => {
+  const client = new Twitter({
+    version: "1.1",
+    bearer_token: process.env.TWITTER_BEARER_TOKEN
+  });
+
+  return client.get('users/show', { hashtag: hashtag });
+}

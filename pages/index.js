@@ -2,41 +2,48 @@ import Head from 'next/head'
 import RadioEmbedded from '../components/RadioEmbedded'
 import Share from '../components/Share'
 import Messages from '../components/Messages'
-import Tweets from '../components/Tweets'
 import { useState, useEffect } from "react"
-export default function Home() {
- 
-    const radiolizeAPI = 'https://studio19.radiolize.com/api/nowplaying'
-    const [showPosts, setshowPosts] = useState();
- 
-    let displayData;
-    function pullJson() {
-        fetch(radiolizeAPI)
-            .then(response => response.json())
-            .then(responseData => {
-              var radiosenzazucchero = responseData.filter(x => x.station.id == 58);
 
-                /*
-                var messaggi = responseData.messages.sort((a, b) => a - b);
-                var maxMessaggi = messaggi.slice(0, 10)
-                displayData = maxMessaggi.map(function (data) {
-                    return (
-                        <div key={data.id}>
-                            <p> {new Date(data.created_at).toLocaleDateString('it-IT')} <b>{data.name} : </b>
-                                "<i>{data.text}</i>"
-                            </p>
-                            <hr></hr>
-                        </div>
-                    )
-                })
-                setshowPosts(displayData);
-                console.log(radiosenzazucchero);
-               */
-            })
-        //return;
-    }
-    useEffect(() => {
-      pullJson();
+export default function Home() {
+
+  const radiolizeAPI = 'https://studio19.radiolize.com/api/nowplaying'
+
+  const [showPosts, setshowPosts] = useState();
+
+  let displayData;
+  function pullJson() {
+    fetch(radiolizeAPI)
+      .then(response => response.json())
+      .then(responseData => {
+        var radiosenzazucchero = responseData.filter(x => x.station.id == 58);
+
+        /*
+        var messaggi = responseData.messages.sort((a, b) => a - b);
+        var maxMessaggi = messaggi.slice(0, 10)
+        displayData = maxMessaggi.map(function (data) {
+            return (
+                <div key={data.id}>
+                    <p> {new Date(data.created_at).toLocaleDateString('it-IT')} <b>{data.name} : </b>
+                        "<i>{data.text}</i>"
+                    </p>
+                    <hr></hr>
+                </div>
+            )
+        })
+        setshowPosts(displayData);
+        console.log(radiosenzazucchero);
+       */
+      })
+    //return;
+  }
+
+  function twitterPosts() {
+
+  }
+
+  useEffect(() => {
+    pullJson();
+    twitterPosts();
   })
   return (
     <div className="container">
@@ -64,25 +71,25 @@ export default function Home() {
 
       <main>
         <h2 className="title">
-          welcome to 
+          welcome to
         </h2>
         <h1 className="name"><i className="greencolor">senza</i>zucchero</h1>
         <h4 className="subname">
           internet radio cafè
         </h4>
         <div>
-          
+
           <RadioEmbedded></RadioEmbedded>
-        </div>
-        <hr></hr>
-        <div className="centralize">
- 
         </div>
         <div className="centralize">
           <Share></Share>
           <br></br>
           <img className="imginvisible" src="senzazuccherologo.png" alt="senzazucchero internet radio" height="200px" width="200px"></img>
         </div>
+        <div className="centralize topsub">
+          <Messages></Messages>
+        </div>
+
       </main><footer>
         <img src="senzazuccherologo.svg" alt="senzazucchero internet radio" height="200px" width="200px"></img>
       </footer><style jsx>{`
@@ -99,7 +106,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 1.8rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -234,13 +241,14 @@ export default function Home() {
         }
 
         footer img{
-          position: absolute;
+          position: relative;
           bottom: 0px;
       
         }
 
         .imginvisible{
           visibility:hidden;
+          display:none;
         }
       
       `}</style><style jsx global>{`
@@ -252,12 +260,17 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
+#twitter-widget-0{
+  heigh:40px!important;
+}
         .centralize{
           text-align: center;
   
           }
-  
+  .topsub{
+    position: relative;
+    top: -24px;
+  }
           @font-face {
             font-family: Caveat;
             src: url(Caveat/Caveat-VariableFont_wght.ttf);
