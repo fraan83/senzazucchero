@@ -21,8 +21,8 @@ export default function Messages() {
 
                     <TwitterTimelineEmbed
                         sourceType="profile"
-                        screenName="zuccherosenza"
-                        options={{ tweetLimit: '3', height: 500, width: 400 }}
+                        screenName="senzazuccherock"
+                        options={{ tweetLimit: '10', height: 450, width: 400 }}
                     />
 
                 </div>
