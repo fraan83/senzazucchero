@@ -69,15 +69,11 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff"></meta>
         <meta property="og:url" content="https://www.senzazucchero.rocks/" />
         <meta property="og:title" content="SenzaZucchero - internet radio cafè" />
-        <meta property="og:image" content="https://www.senzazucchero.rocks/ms-icon-144x144.png" />
-        <meta name="description" content="Senza Zucchero is radio web internet senza zuccheri aggiunti! senzazucchero rocks! " />
+        <meta property="og:image" content="https://www.senzazucchero.rocks/caffe.jpg" />
+        <meta name="description" content="Senza Zucchero is a web radio sugar free, senza zuccheri aggiunti! senzazucchero rocks! " />
         <meta property="og:description" content="internet radio cafè senza zucchero" />
         <meta property="og:type" content="music:creator" />
- 
-
         <meta property="og:locale" content="it_IT" />
-
-
       </Head>
 
       <main>
