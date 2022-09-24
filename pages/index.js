@@ -69,7 +69,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff"></meta>
         <meta property="og:url" content="https://www.senzazucchero.rocks/" />
         <meta property="og:title" content="SenzaZucchero - internet radio cafè" />
-        <meta property="og:image" content="https://www.senzazucchero.rocks/caffe.jpg" />
+        <meta property="og:image" content="https://www.senzazucchero.rocks/croissants.jpg" />
         <meta name="description" content="Senza Zucchero is a web radio sugar free, senza zuccheri aggiunti! senzazucchero rocks! " />
         <meta property="og:description" content="internet radio cafè senza zucchero" />
         <meta property="og:type" content="music:creator" />
@@ -237,7 +237,7 @@ export default function Home() {
 
 
         .greencolor{
-          color: green;
+          color: #69ed86;
         }
 
         @media (max-width: 600px) {
