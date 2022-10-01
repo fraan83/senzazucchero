@@ -60,8 +60,7 @@ export default function Share() {
         url={'https://senzazucchero.rocks'}
         title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
         hashtags={'#webradio'}
-        windowWidth={650}
-        windowHeight={650}
+  
       >
         <TwitterIcon size={32} round />
       </TwitterShareButton>
