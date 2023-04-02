@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>senzazucchero - radio </title>
+        <title> radio senzazucchero </title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -68,10 +68,10 @@ export default function Home() {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
         <meta property="og:url" content="https://www.senzazucchero.rocks/" />
-        <meta property="og:title" content="SenzaZucchero - internet radio cafè" />
+        <meta property="og:title" content="SenzaZucchero - La web radio alternativa" />
         <meta property="og:image" content="https://www.senzazucchero.rocks/desc2.jpg" />
-        <meta name="description" content="Senza Zucchero is a web radio sugar free, senza zuccheri aggiunti! senzazucchero rocks! " />
-        <meta property="og:description" content="internet radio cafè senza zucchero" />
+        <meta name="description" content="Senza Zucchero Web Radio, senzazucchero rocks! Web radio italiana nata per trasmettere talk e brani di gruppi emergenti." />
+        <meta property="og:description" content="Web radio italiana nata per trasmettere talk e brani di gruppi emergenti. Internet radio cafè senza zucchero" />
         <meta property="og:type" content="music:creator" />
         <meta property="og:locale" content="it_IT" />
       </Head>

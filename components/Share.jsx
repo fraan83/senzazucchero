@@ -5,7 +5,7 @@ import {
   TwitterIcon,
   TwitterShare,
   TumblrShareButton,
-  tumblrIcon,
+  TumblrIcon,
   PinterestShareButton,
   PinterestIcon,
   RedditShareButton,
@@ -14,6 +14,8 @@ import {
   WhatsappIcon,
   LinkedinShareButton,
   LinkedinIcon,
+  TelegramShareButton,
+  TelegramIcon,
 } from 'next-share';
 import { useState, useEffect } from "react"
 
@@ -52,31 +54,43 @@ export default function Share() {
         url={'https://senzazucchero.rocks'}
         title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
         hashtag={'#senzazucchero'}
-        
+
       >
         <FacebookIcon size={32} round />
       </FacebookShareButton>
       <TwitterShareButton
         url={'https://senzazucchero.rocks'}
         title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
+
       >
         <TwitterIcon size={32} round />
       </TwitterShareButton>
-      <PinterestShareButton
-
-        url={'senzazucchero.rocks'}>
-        <PinterestIcon size={32} round />
-      </PinterestShareButton>
-      <RedditShareButton
+      <TumblrShareButton
+        url={'https://senzazucchero.rocks'}
         title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
-        url={'senzazucchero.rocks'} >
-        <RedditIcon size={32} round />
-      </RedditShareButton>
+
+      >
+        <TumblrIcon size={32} round />
+      </TumblrShareButton>
+      <TelegramShareButton
+        url={'https://senzazucchero.rocks'}
+        title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
+
+      >
+        <TelegramIcon size={32} round />
+      </TelegramShareButton>
+
+
       <WhatsappShareButton
 
         url={'senzazucchero.rocks'} >
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
+      <RedditShareButton
+        title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
+        url={'senzazucchero.rocks'} >
+        <RedditIcon size={32} round />
+      </RedditShareButton>
       <LinkedinShareButton
         title={'Sto ascoltando ' + showPosts + ' su radio #senzazucchero'}
         url={'senzazucchero.rocks'}>
